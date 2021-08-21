@@ -2,16 +2,16 @@ import React from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
+import '../css/Carousel.css'
+
 // carousel imgs
-import pic1 from '../imgs/001.JPG'
-import pic2 from '../imgs/002.JPG'
-import pic3 from '../imgs/005.JPG'
+import pic1 from '../imgs/DarthVectivus.jpeg'
+import pic2 from '../imgs/LGBTQavatar.png'
 
 const MyCarousel = () => (
-  <Carousel plugins={['arrows']}>
+  <Carousel plugins={['arrows']} className='carousel'>
     <img src={pic1} />
     <img src={pic2} />
-    <img src={pic3} />
   </Carousel>
 );
 
